@@ -11,11 +11,12 @@ public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServ
  
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class<?>[0];
+		return null;
 	}
  
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
 	}
+	
 }
