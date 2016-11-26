@@ -32,13 +32,8 @@ public class AppConfiguration extends WebMvcConfigurerAdapter {
 		messageSource.setBasename("messages");
 		return messageSource;
 	}
-
-	/*
-     * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
-     *
-     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
+        registry.addResourceHandler("/resourcess/**").addResourceLocations("/resourcess/");
     }
 }
