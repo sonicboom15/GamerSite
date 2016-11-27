@@ -7,9 +7,9 @@ import com.rishi.model.Product;
 public interface ProductDao{
 	Product findById(int id);
 	
-	void saveStudent(Product product);
+	void saveProduct(Product product);
     
-    void deleteProductById(String id);
+    void deleteProductById(int id);
      
-    List<Product> findAllProduct();	
+    List<Product> findAllProduct();
 }

@@ -24,9 +24,9 @@ public class ProductDaoImpl extends AbstractDao<Integer, Product> implements Pro
         Criteria criteria = createEntityCriteria();
         return (List<Product>) criteria.list();
     }
-	public void deleteProductById(String id) {
+	public void deleteProductById(int id) {
 		Query query = getSession().createSQLQuery("delete from Product where pro_id = :id");
-        query.setString("pro_id", id);
+        query.setLong("pro_id", id);
         query.executeUpdate();
 	}
 }

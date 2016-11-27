@@ -43,6 +43,9 @@ public class Product {
 	{
 		this.pro_id=pro_id;
 	}
+	public String getName()	{
+		return pro_name;
+	}
 	public void setName(String pro_name) 
 	{
         this.pro_name = pro_name;
