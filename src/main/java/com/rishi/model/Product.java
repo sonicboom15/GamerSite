@@ -60,4 +60,22 @@ public class Product {
 	public void setDescp(String Descp) {
         this.Descp = Descp;
     }
+	 @Override
+	    public boolean equals(Object obj) {
+	        if (this == obj)
+	            return true;
+	        if (obj == null)
+	            return false;
+	        if (!(obj instanceof Product))
+	            return false;
+	       Product other = (Product) obj;
+	        if (pro_id != other.pro_id)
+	            return false;
+	        if (Descp == null) {
+	            if (other.Descp != null)
+	                return false;
+	        } else if (!Descp.equals(other.Descp))
+	            return false;
+	        return true;
+	    }
 }
