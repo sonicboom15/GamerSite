@@ -2,6 +2,9 @@ package com.rishi.controllers;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/")
 public class AppController{
+	
+	@Autowired
+	MessageSource messageSource;
 	/* This is for opening the home page at the start of the webpage I.E opening the webpage */
 	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String homePage(ModelMap model) {
@@ -44,10 +50,10 @@ public class AppController{
 		model.addAttribute("user", getPrincipal());
 		return "admin";
 	}
-	@RequestMapping(value = "/superuser", method = RequestMethod.GET)
+	@RequestMapping(value = "/dba", method = RequestMethod.GET)
 	public String dbaPage(ModelMap model) {
 		model.addAttribute("user", getPrincipal());
-		return "superuser";
+		return "dba";
 	}
 	private String getPrincipal(){
 		String userName = null;

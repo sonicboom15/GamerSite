@@ -184,15 +184,15 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="resources/bootstrap-assets/js/bootstrap.min.js"></script>
-    <script src="resources/js/custom.js"></script>
-    <script src="resources/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="resources/js/jquery.easing.min.js"></script>
-    <script src="resources/plugins/waypoints/jquery.waypoints.min.js"></script>
-    <script src="resources/plugins/countTo/jquery.countTo.js"></script>
-    <script src="resources/plugins/inview/jquery.inview.min.js"></script>
-    <script src="resources/plugins/Lightbox/dist/js/lightbox.min.js"></script>
-    <script src="resources/plugins/WOW/dist/wow.min.js"></script>
+    <script src="resourcess/bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="resourcess/js/custom.js"></script>
+    <script src="resourcess/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="resourcess/js/jquery.easing.min.js"></script>
+    <script src="resourcess/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="resourcess/plugins/countTo/jquery.countTo.js"></script>
+    <script src="resourcess/plugins/inview/jquery.inview.min.js"></script>
+    <script src="resourcess/plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="resourcess/plugins/WOW/dist/wow.min.js"></script>
  </body>
 
 </html>
